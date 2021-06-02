@@ -1,15 +1,14 @@
 interface SkillArea {
-    skill: string;
-    proficiency: string;
+  skill: string;
+  proficiency: string;
 }
 
 export class User {
-    username: string;
-    skillareas: SkillArea[];
+  username: string;
+  skillareas: SkillArea[];
 
-    constructor(username: string, skillareas: SkillArea | SkillArea[]) {
-        this.username = username;
-        this.skillareas = Array.isArray(skillareas) ? [...skillareas] : [skillareas];
-    }
+  constructor(username: string, skillareas: SkillArea | SkillArea[]) {
+    this.username = username;
+    this.skillareas = Array.isArray(skillareas) ? [...skillareas] : [skillareas];
+  }
 }
-

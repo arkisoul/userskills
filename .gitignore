@@ -2,3 +2,4 @@ logs
 build
 node_modules
 .env
+.eslintcache
